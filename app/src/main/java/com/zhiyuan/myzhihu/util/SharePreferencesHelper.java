@@ -35,5 +35,7 @@ public class SharePreferencesHelper {
    public static String getString(String key){
       return   mSharedPreferences.getString(key,"");
    }
-
+    public static String getString(String key, String defValue) {
+        return mSharedPreferences.getString(key, defValue);
+    }
 }
